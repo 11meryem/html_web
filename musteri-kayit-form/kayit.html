@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Form</title>
+</head>
+<body>
+    <h1>Müşteri Kayıt Form</h1>
+    
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="get"> <!--Method ekleme-->
+        <p><fieldset><legend>Kişisel Bilgiler</legend></p>
+
+        <p><label for="ad_soyad">Ad Soyad</label></p>
+        <input name="ad_soyad" id="ad_soyad" type="text" required>
+        <br><br>
+
+        <p><label for="dtarih">Doğum Tarihi:</label></p>
+        <input type="date" id="dtarih" name="dtarih" value="2000-00-01">
+        <br><br>
+
+        <p><label for="maas">Maaş Beklentiniz</label></p>
+        <input type="number" id="maas" name="maas" min="5000" step="1000">
+        <br><br>
+
+        <p><label for="ders">En Sevdiğiniz Ders</label></p>
+        <input type="text" id="ders" name="ders" list="dersler">
+        <datalist id="dersler">
+            <option value="Web Tabanlı Uygulama"></option>
+            <option value="Mobil Uygulama Geliştirme"></option>
+            <option value="Grafik Ve Canlandırma"></option>
+            <option value="Yapay Zeka Ve Makine Öğrenimi"></option>
+        </datalist>
+        </fieldset>
+
+        <p><fieldset><legend>Üyelik Bilgileri</legend></p>
+        
+        <p><label for="kullanici">Kullanıcı Adı</label></p>
+        <input type="text" id="kullanici" name="kullanici" required maxlength="5" pattern="[A-Za-z]+">
+        <br><br>
+        <p><label for="eposta">E-Posta</label></p>
+        <input type="email" id="eposta" name="eposta" placeholder="@yazilim11.com">
+        <br><br>
+        <p><label for="sifre">Şifre</label></p>
+        <input type="password" name="sifre" id="sifre" minlength="8" placeholder="en az 8 karakter olmalıdır" required>
+        <br><br>
+        <p><label for="sozlesme">Üyelik Sözleşmesi</label></p>
+        <textarea name="sozlesme" id="sozlesme" rows="5" cols="30" placeholder="Yazınızı Buraya Yazınız...."></textarea>
+        </fieldset>
+        <br>
+        <button type="submit"> Kaydet</button>
+        <!--sayfadakileri kaydediyor-->
+        <button type="submit">Temizle</button>
+        <!--sayfadaki herşeyi temizliyor-->
+    </form>
+</body>
+</html>
