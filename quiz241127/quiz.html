@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad</title>
+</head>
+<body>
+    <h1>ADIM SOYADIM</h1>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <p><fieldset><legend>Meryem Aynur Akbahar</legend></p>
+        <p><label for="g_anahtar">Güvenlik Anahtarı</label></p>
+        <input type="text" name="g_anahtar" id="g_anahtar" placeholder="6907865412312">
+        <br><br>
+        <p><label for="eposta">E-Posta</label></p>
+        <input type="email" name="eposta" id="eposta" placeholder="admin@mail.com" autocomplete="off">
+        <br><br>
+        <p><label for="dt">Doğum Tarihi</label></p>
+        <input type="date" name="dt" id="dt" min="2000-01-01" max="2010-12-31">
+        <br><br>
+        <p><label for="sifre">Şifre</label></p>
+        <input type="password" name="sifre" id="sifre" maxlength="8">
+        <br><br>
+        <label for="avatar">Avatar Seçimi</label>
+        <select id="avatar" name="avatarlar">
+        <option value="Dory">Dory</option>
+        <option value="Nemo">Nemo</option>
+        <option value="Moana">Moana</option>
+        <option value="Rango">Rango</option>
+        </select>
+        </fieldset>
+        <br>
+        <button type="submit"> Kaydet</button>
+        <!--sayfadakileri kaydediyor-->
+        <button type="submit">Temizle</button>
+        <!--sayfadaki herşeyi temizliyor-->
+    </form>
+</body>
+</html>
