@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-2</title>
+</head>
+<body>
+
+    <h1>Meryem Aynur Akbahar</h1>
+
+    
+    <form action=" https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <fieldset>
+            <legend>Meryem Aynur Akbahar</legend>
+              
+    
+    <label for="guvenlik">Güvenlik Anahtarı:</label><br>
+    <input type="text" name="guvenlik" id="guvenlik" value="5638998234567" disabled>
+    <br><br>
+
+    <label for="eposta">Eposta:</label><br>
+    <input type="email" name="eposta" id="eposta" placeholder="örn:admin@mail.com" required >
+    <br><br>   
+    
+    <label for="dtarih">Doğum Tarihi:</label><br>
+    <input type="date" name="dtarih" id="dtarih" min="2000-01-01" max="2010-12-31">
+    <br><br>
+
+    <label for="sifre">Şifre:</label><br>
+    <input type="password" name="sifre" id="sifre" minlength="8" maxlength="8" required>
+    <br><br>
+
+    <label for="avatar">Avatar Seçimi:</label><br>
+    <select name="avatar" id="avatar">
+        <option value="Dory">Dory</option>
+        <option value="Nemo">Nemo</option>
+        <option value="Moana">Moana</option>
+        <option value="Rango">Rango</option>
+    </select>
+    
+    <br><br>
+
+    </fieldset>
+    <br>
+    
+    <button type="submit">KAYDET</button>
+    <button type="reset">TEMİZLE</button>
+    
+</form>
+</body>
+</html>
